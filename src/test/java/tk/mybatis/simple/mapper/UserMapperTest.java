@@ -11,7 +11,7 @@ import tk.mybatis.simple.model.SysUser;
 
 public class UserMapperTest extends BaseMapperTest {
 	
-		//4.4.3 foreach实现动态update
+		
 		//通过Map更新列,返回更新的行数.
 		//public int updateByMap2(Map<String, Object> map);
 		@Test
