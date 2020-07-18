@@ -32,7 +32,7 @@ public class UserMapperTest extends BaseMapperTest {
 				Map<String, Object> map = new HashMap<String, Object>();
 				
 				//查询字段，同样也是更新字段，必须保证该值(1L)存在.
-				map.put("id", 1L);
+				map.put("id", 1L); 
 				
 				//要更新的其他字段
 				map.put("userEmail", "test@mybatis.tk");
