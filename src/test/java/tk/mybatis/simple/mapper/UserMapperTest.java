@@ -22,7 +22,7 @@ public class UserMapperTest extends BaseMapperTest {
 		public void testUpdateByMap2(){	
 		
 			//调用父类BaseMapperTest的getSqlSession()获取sqlSession
-			SqlSession sqlSession = this.getSqlSession();
+			SqlSession sqlSession = this.getSqlSession(); 
 			
 			try{
 				//获取UserMapper接口
