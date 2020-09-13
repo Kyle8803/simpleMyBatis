@@ -33,8 +33,9 @@ public class UserMapperTest extends BaseMapperTest {
 				map.put("userEmail", "test@mybatis.tk");
 				map.put("userPassword", "12345678");
 				
-				//更新数据
-				userMapper.updateByMap2(map);
+				//更新数据,返回更新的行数. UserMapper.java public int updateByMap2(Map<String, Object> map);
+				int updatedLineCount = userMapper.updateByMap2(map);
+				System.out.println("更新的行数为:"+updatedLineCount);
 				
 				//根据当前id查询修改后的数据
 				SysUser user = userMapper.selectById(1L);
